@@ -21,6 +21,7 @@ pageslideDirective.directive('pageslide', [
                 var param = {};
                 param.side = attrs.pageslide || 'right';
                 param.speed = attrs.psSpeed || '0.5';
+                param.startSize = (attrs.startSize || 0) + 'px';
                 param.size = '300px';
 
                 /* DOM manipulation */
@@ -43,24 +44,28 @@ pageslideDirective.directive('pageslide', [
                                 slider.style.top = '0px';
                                 slider.style.bottom = '0px';
                                 slider.style.right = '0px';
+                                slider.style.width = param.startSize;
                                 break;
                             case 'left':
                                 slider.style.height = '100%';   
                                 slider.style.top = '0px';
                                 slider.style.bottom = '0px';
                                 slider.style.left = '0px';
+                                slider.style.width = param.startSize;
                                 break;
                             case 'top':
                                 slider.style.width = '100%';   
                                 slider.style.left = '0px';
                                 slider.style.top = '0px';
                                 slider.style.right = '0px';
+                                slider.style.height = param.startSize;
                                 break;
                             case 'bottom':
                                 slider.style.width = '100%'; 
                                 slider.style.bottom = '0px';
                                 slider.style.left = '0px';
                                 slider.style.right = '0px';
+                                slider.style.height = param.startSize;
                                 break;
                         }
 
