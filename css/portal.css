@@ -1,0 +1,17 @@
+#layout{
+  padding-left: 500px;
+  position: relative;
+  background-color: #00649D;
+  color: white;
+}
+
+#nav{
+  margin-left: -500px;
+  width: 150px;
+  height: 100%;
+}
+
+.nav-inner{
+  display: block;
+  padding: 2em 0;
+}

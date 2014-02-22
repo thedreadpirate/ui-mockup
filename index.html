@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="js/external/angular.min.js"></script>
+    <script src="js/external/angular-route.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/pure.css"></script>
+  </head>
+  <body ng-app="portal">
+    <div id="layout" class="content pure-g">
+      <div pageslide="left" ps-speed="0.5" ps-open="true" id="nav" class="pure-u">
+        <ul>
+          <li>A</li>
+          <li>S</li>
+        </ul>
+      </div>
+    </div>
+    <ng-view>
+    </ng-view>
+  </body>
+</html>
