@@ -20,20 +20,12 @@ Add transition to containers so they can push in and out.
     transition: all 0.2s ease-out;
 }
 
-.nav-header{
-    width:30px;
-    font-size: 30px;
-}
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
 #layout {
     position: relative;
-    padding-left: 150px;
-}
-#layout.collapsed {
-    position: relative;
-    padding-left: 30px;
+    padding-left: 0;
 }
     #layout.active {
         position: relative;
@@ -47,7 +39,6 @@ This is the parent `<div>` that contains the menu and the content area.
         #layout.active .menu-link {
             left: 150px;
         }
-
 /*
 The content `<div>` is where all your content goes.
 */
@@ -84,6 +75,8 @@ The content `<div>` is where all your content goes.
     color: #888;
 }
 
+
+
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
@@ -99,12 +92,7 @@ appears on the left side of the page.
     z-index: 1000; /* so the menu or its navicon stays above all content */
     background: #191818;
     overflow-y: auto;
-    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-}
-
-#menu.collapsed{
-    width: 30px;
 }
     /*
     All anchors inside the menu should be styled like this.
@@ -144,7 +132,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #008abf;
+        background: #1f8dd6;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -216,9 +204,6 @@ small screens.
             margin-top: 0.6em;
         }
 
-
-.page-header{
-}
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 

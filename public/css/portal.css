@@ -1,6 +1,8 @@
-#layout{
-  padding-left: 500px;
-  position: relative;
+.text{
+  padding: 5px;
+}
+
+.intro{
   background-color: #00649D;
   color: white;
 }
@@ -11,7 +13,41 @@
   height: 100%;
 }
 
+#menu li{
+  padding: .3em;
+}
+
 .nav-inner{
   display: block;
   padding: 2em 0;
+}
+
+#main{
+  padding: 0 15px 0 15px;
+}
+
+.center-content{
+  margin: 0 auto;
+}
+
+.summary-chart{
+  height: 100px;
+}
+
+.notification-count{
+  float: right;
+  /*margin:15px;*/
+  background-color: #A91024;
+  padding: 3px;
+  color: white;
+  border-radius: 1em;
+  width: 1em;
+  text-align: center;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.updated{
+  background-color: yellow;
 }
